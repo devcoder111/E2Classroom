@@ -69,18 +69,8 @@ export default () => {
             mobileShow ? "flex flex-col" : "hidden"
           }  justify-center`}
         >
-          <li className="h-16 py-5 px-8">
-            <div
-              className="text-text-01 md:px-2 lg:px-4 xl:px-6 flex justify-between"
-              onClick={() => setCoursesShow(!coursesShow)}
-            >
-              Courses
-              <img
-                src="/images/dropdown.svg"
-                className="w-4 h-3 my-2"
-                alt="hamburgar"
-              />
-            </div>
+          <li className="h-16 py-5 px-8 text-brand-04">
+            <NavLink to="/guide">Guide</NavLink>
           </li>
           <li className="h-16 py-5 px-8 text-brand-04">
             <NavLink to="/login">Login</NavLink>
