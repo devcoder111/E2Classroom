@@ -41,34 +41,10 @@ export default () => {
             <ul className="flex flex-row items-center justify-center uppercase">
               <li>
                 <NavLink
-                  to="/courses"
+                  to="/guide"
                   className="text-text-01 md:px-2 lg:px-4 xl:px-6"
                 >
-                  Courses
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/solutions"
-                  className="text-text-01 md:px-2 lg:px-4 xl:px-6"
-                >
-                  Solutions
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/pricing"
-                  className="text-text-01 md:px-2 lg:px-4 xl:px-6"
-                >
-                  Pricing
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/agent"
-                  className="text-text-01 md:px-2 lg:px-4 xl:px-6"
-                >
-                  Become an agent
+                  Guide
                 </NavLink>
               </li>
             </ul>
