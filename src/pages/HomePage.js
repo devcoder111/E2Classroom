@@ -288,10 +288,20 @@ const HomePage = () => {
           animateOnce={true}
           initiallyVisible={true}
         >
-          <div>
-            <E2CButton color="black" bgColor="white" showBorder={false}>
-              <i className="fa fa-globe mr-2" aria-hidden="true"></i>ENGLISH
-            </E2CButton>
+          <div class="flex mb-4">
+            <div class="w-1/2 ">
+              <E2CButton color="black" bgColor="white" showBorder={false}>
+                <i className="fa fa-globe mr-2" aria-hidden="true"></i>ENGLISH
+              </E2CButton>
+            </div>
+
+            <div class="w-1/2 ">
+              <img
+                className="hidden md:block float-right"
+                src="/images/logo-01-gray.png"
+                alt="gray-logo"
+              />
+            </div>
           </div>
         </ScrollAnimation>
       </section>
