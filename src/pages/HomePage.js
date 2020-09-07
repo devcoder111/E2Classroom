@@ -241,36 +241,21 @@ const HomePage = () => {
         className="container relative mx-auto p-2 md:p-4 lg:p-8 z-10"
         style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
       >
-        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-          <img
-            className="hidden md:block"
-            src="/images/logo-01-gray.png"
-            alt="gray-logo"
-          />
-        </ScrollAnimation>
-
-        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-          <div className="hidden md:flex flex-row mt-4">
-            <div className="w-1/3">
-              <h5 className="text-text-01 text-xl">COURSES</h5>
-              <div className="flex flex-row text-text-02">
-                <ul className="w-1/2 flex flex-col">
-                  <li>General English</li>
-                  <li>IELTS Academic</li>
-                  <li>IELTS General</li>
-                </ul>
-                <ul className="w-1/2 flex flex-col">
-                  <li>PTE</li>
-                  <li>OET</li>
-                  <li>TOEFL</li>
-                </ul>
+        <ScrollAnimation
+          animateIn="fadeInUp"
+          animateOnce={true}
+          initiallyVisible={true}
+        >
+          <div className="overflow-hidden">
+            <div className="float-right">
+              <div className="inline-flex items-center">
+                <p className="mr-2">Special thanks to </p>
+                <img
+                  className=" "
+                  src="/images/speech.png"
+                  alt="gray-logo"
+                />
               </div>
-            </div>
-            <div className="w-1/3">
-              <h5 className="text-text-01 text-xl">SOLUTIONS</h5>
-            </div>
-            <div className="w-1/3">
-              <h5 className="text-text-01 text-xl">SOLUTIONS</h5>
             </div>
           </div>
         </ScrollAnimation>
@@ -297,7 +282,7 @@ const HomePage = () => {
 
             <div class="w-1/2 ">
               <img
-                className="hidden md:block float-right"
+                className="float-right"
                 src="/images/logo-01-gray.png"
                 alt="gray-logo"
               />
